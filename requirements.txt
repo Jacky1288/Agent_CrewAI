@@ -1,4 +1,6 @@
 crewai
+crewai-tools
+exa-py
 python-dotenv
 jupyter
 ipykernel

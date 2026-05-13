@@ -24,6 +24,8 @@
 
 建议使用 `python -m venv` 创建独立虚拟环境。
 
+如果你已经有可用的 Python 虚拟环境，也可以直接复用，不必重新创建。
+
 ### macOS / Linux
 
 ```bash
@@ -53,6 +55,10 @@ python -m venv .venv
 python -m pip install --upgrade pip
 pip install -r requirements.txt
 ```
+
+当前项目依赖已包含 `crewai-tools`，用于 [C1M1_Lab_2_automatic_deep_research_solution.ipynb](C1M1_Lab_2_automatic_deep_research_solution.ipynb) 中的 `EXASearchTool` 和 `ScrapeWebsiteTool`。
+
+如果你要运行 [C1M1_Lab_2_automatic_deep_research_solution.ipynb](C1M1_Lab_2_automatic_deep_research_solution.ipynb)，还需要安装 `exa-py`。该包为 Exa 搜索工具提供底层客户端，安装名是 `exa-py`，导入模块名是 `exa_py`。
 
 如果你要把当前虚拟环境注册为 Notebook 内核，可执行：
 
