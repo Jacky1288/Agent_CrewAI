@@ -9,6 +9,8 @@ def load_env():
     api_base = os.getenv("OPENAI_API_BASE")
     if api_base:
         os.environ["OPENAI_API_BASE"] = api_base
+        # Also set OPENAI_BASE_URL — used by the openai SDK (>=1.x) and CrewAI's own OpenAI provider
+        os.environ["OPENAI_BASE_URL"] = api_base
         print(f"Using Custom API Base: {api_base}")
 
     model_name = os.getenv("OPENAI_MODEL_NAME")
