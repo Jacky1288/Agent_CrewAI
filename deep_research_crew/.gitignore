@@ -1,0 +1,7 @@
+.env
+.env.bak
+__pycache__/
+.DS_Store
+.vscode/
+final_report.md
+plots/
